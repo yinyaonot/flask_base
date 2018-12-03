@@ -1,13 +1,13 @@
 from flask import Blueprint
 
-user = Blueprint('user', __name__)
+users = Blueprint('users', __name__)
 
 
-@user.route('/login/')
+@users.route('/login/')
 def login():
     return '登录'
 
-@user.route('/register/')
+@users.route('/register/')
 def register():
     return '注册'
 

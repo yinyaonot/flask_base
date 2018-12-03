@@ -8,7 +8,7 @@ app = create_app()
 第二步 实例化
 '''
 manager = Manager(app=app)
-manager.add_command('start', Server(port=6000))
+manager.add_command('start', Server(host='0.0.0.0',port=8001))
 
 if __name__ == '__main__':
     manager.run()
